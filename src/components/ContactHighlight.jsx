@@ -42,13 +42,13 @@ export function ContactHero() {
         <a href="https://www.linkedin.com/company/codeteak/posts/?feedView=all" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedin className="hover:text-blue-600 transition" />
         </a>
-        <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <a href="https://wa.me/8075456297" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
           <FaWhatsapp className="hover:text-green-500 transition" />
         </a>
         <a href="https://x.com/codeteak" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
           <FaXTwitter className="hover:text-black dark:hover:text-white transition" />
         </a>
-        <a href="https://facebook.com/codeteak" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="https://www.facebook.com/profile.php?id=61575111071671" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <FaFacebook className="hover:text-blue-500 transition" />
         </a>
       </div>
