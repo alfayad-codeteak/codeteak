@@ -10,21 +10,21 @@ export const TextParallaxContentExample = () => {
         subheading="About Us"
         heading="Codeteak"
       >
-        <ExampleContent />
+        <AboutContent />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Quality"
         heading="Never compromise."
       >
-        <ExampleContent />
+        <QualityContent />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Modern"
         heading="Dress for the best."
       >
-        <ExampleContent />
+        <ModernContent />
       </TextParallaxContent>
     </div>
   );
@@ -109,21 +109,58 @@ const OverlayCopy = ({ subheading, heading }) => {
   );
 };
 
-const ExampleContent = () => (
+const AboutContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
+      We Build Digital Experiences That Matter
     </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
+        Codeteak is a tech powerhouse that transforms ideas into intelligent software products. From custom apps to full-scale enterprise systems, we design, develop, and deliver high-performance solutions tailored for impact.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
+        With a focus on usability, scalability, and innovation, we collaborate with clients at every stage—from ideation to launch—to deliver results that go beyond code.
+      </p>
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+        Learn more <FiArrowUpRight className="inline" />
+      </button>
+    </div>
+  </div>
+);
+
+
+const QualityContent = () => (
+  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+      Built for Performance, Designed for Excellence
+    </h2>
+    <div className="col-span-1 md:col-span-8">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+        Every line of code we write is backed by rigorous testing, industry standards, and years of expertise. We follow agile workflows and best practices to ensure each product is secure, fast, and future-proof.
+      </p>
+      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+        Quality is not a department—it's our culture. Whether you're launching a startup or scaling enterprise systems, we deliver clean, maintainable, and high-quality digital solutions you can trust.
+      </p>
+      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
+        Learn more <FiArrowUpRight className="inline" />
+      </button>
+    </div>
+  </div>
+);
+
+
+
+const ModernContent = () => (
+  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+      Powered by Modern Tech. Built for Tomorrow.
+    </h2>
+    <div className="col-span-1 md:col-span-8">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+        We use the most reliable and modern technology stacks—React, Node.js, Next.js, MongoDB, Tailwind CSS, AWS, Docker, and more—to build robust digital products that scale with your vision.
+      </p>
+      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
+        From frontend finesse to backend brilliance, we innovate at every layer. Our solutions are optimized for performance, security, and long-term growth—ready for the modern world and future-ready from day one.
       </p>
       <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
         Learn more <FiArrowUpRight className="inline" />

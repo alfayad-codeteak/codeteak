@@ -4,7 +4,7 @@ import { ContactHero } from '../components/ContactHighlight'
 
 const Contact = () => {
   return (
-    <div className='h-[100vh]'>
+    <div className='h-[200vh]'>
       <ContactHero />
     </div>
   )

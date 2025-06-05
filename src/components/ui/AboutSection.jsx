@@ -608,32 +608,29 @@ const AboutSection = () => {
             </div>
 
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="mt-10 lg:mt-0">
-                <span className="block mb-4 text-lg text-red-600 font-semibold ">
-                  About US
-                </span>
-                <h2 className="mb-5 text-3xl font-bold text-black font-wave tracking-wide sm:text-[40px]/[48px]">
-                  Make your customers happy by giving services.
-                </h2>
-                <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
-                </p>
-                <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
-                </p>
-                <Link
-                  to={"/about"}
-                  className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-red-600
-                   border  rounded-md px-7 bg-primary hover:bg-opacity-90"
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
+  <div className="mt-10 lg:mt-0">
+    <span className="block mb-4 text-lg text-red-600 font-semibold ">
+      About Us
+    </span>
+    <h2 className="mb-5 text-3xl font-bold text-black font-wave tracking-wide sm:text-[40px]/[48px]">
+      Driving Innovation with Scalable Tech Solutions
+    </h2>
+    <p className="mb-5 text-base text-body-color dark:text-dark-6">
+      Codeteak Technologies is a full-spectrum product and service-based IT company dedicated to building modern digital solutions. We specialize in Web Development, Mobile App Development, Custom Software, UI/UX Design, and IT Consulting tailored to empower startups, enterprises, and everything in between.
+    </p>
+    <p className="mb-8 text-base text-body-color dark:text-dark-6">
+      Along with offering powerful services, we also develop our own line of tech products that are innovative, user-centric, and business-ready. At Codeteak, we believe in turning ideas into reliable, scalable, and impactful digital experiences.
+    </p>
+    <Link
+      to={"/about"}
+      className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-red-600
+       border  rounded-md px-7 bg-primary hover:bg-opacity-90"
+    >
+      Read More
+    </Link>
+  </div>
+</div>
+
           </div>
         </div>
       </section>

@@ -5,8 +5,6 @@ import itServicesData from "./ui/data/serviceData";
 import ServicesCard from "./ServicesCard"
 
 
-const getPlaceholderImage = (id) => `https://picsum.photos/seed/${id}/800/400`;
-
 
 export default function ServiceSection() {
   return (
@@ -23,7 +21,7 @@ export default function ServiceSection() {
             description={service.description}
             benefits={service.benefits}
             icon={service.icon}
-            image={getPlaceholderImage(service.id)}
+            image={service.image}
           />
         ))}
       </div>

@@ -130,9 +130,6 @@ export function ExpandableCard({ title, src, description, children, className, c
                     whileTap={{ scale: 0.97 }}
                     className="text-sm font-medium text-red-600 hover:underline transition"
                   >
-                    <Link to={`/services/${title.toLowerCase().replace(/\s+/g, '-')}`}>
-                      Show Details →
-                    </Link>
                   </motion.button>
                 </div>
               </div>

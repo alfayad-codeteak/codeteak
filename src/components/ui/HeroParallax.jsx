@@ -58,17 +58,19 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div
-      className="max-w-7xl relative mx-auto   px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-black">
-        The Ultimate <br /> <span className="text-red-600 font-langits tracking-wider">Development Team</span>
-      </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-gray-600">
-  Our team is a collective of visionary developers, creative designers, and strategic thinkers who are committed to delivering exceptional digital experiences. With expertise in the latest technologies, we craft scalable, high-performance solutions that drive results. From intuitive UI/UX design to robust backend development, we approach every project with precision, passion, and purpose. We don’t just build products—we build brands, relationships, and impact.
-</p>
+   <div className="max-w-7xl relative mx-auto px-4 w-full left-0 top-0">
+  <h1 className="text-2xl md:text-7xl font-bold dark:text-black leading-tight">
+    The <span className="text-red-600 font-langits tracking-wide">Tech Dream Team</span><br />
+    Behind Every Smart Solution
+  </h1>
+  <p className="max-w-3xl text-base md:text-xl mt-8 dark:text-gray-600">
+    At <strong>Codeteak</strong>, we don’t just write code—we engineer possibilities. Our team is a collective of seasoned software architects, full-stack developers, mobile experts, creative UI/UX designers, cloud engineers, and AI/ML enthusiasts. United by a passion for innovation and precision, we thrive on turning complex challenges into cutting-edge digital solutions.
+  </p>
+  <p className="max-w-3xl text-base md:text-xl mt-5 dark:text-gray-600">
+    We are masters of modern technologies—React, Node.js, Next.js, Flutter, MongoDB, AWS, Docker, and more. Whether it’s building scalable SaaS platforms, intelligent apps, or enterprise-grade systems, we bring strategy, speed, and world-class quality to every project. We’re not just a dev team—we're your digital co-founders.
+  </p>
+</div>
 
-      
-    </div>
   );
 };
 

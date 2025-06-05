@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Shield, X, ArrowRight, Check, Server, Cloud, Code, Smartphone, Database, Wifi, Monitor, Settings, Lock, Zap, Users, Globe, Grid, List, ChevronDown, Filter, Search, Star, Clock, DollarSign, Menu } from 'lucide-react';
 
 import itServicesData from "../components/ui/data/serviceData";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
@@ -181,18 +182,7 @@ const Services = () => {
               selected={selectedTypes}
               onChange={handleTypeChange}
             />
-            <FilterSection
-              title="Complexity"
-              options={complexityLevels}
-              selected={selectedComplexity}
-              onChange={handleComplexityChange}
-            />
-            <FilterSection
-              title="Duration"
-              options={durations}
-              selected={selectedDuration}
-              onChange={handleDurationChange}
-            />
+            
           </div>
         </div>
 
@@ -222,18 +212,7 @@ const Services = () => {
                   selected={selectedTypes}
                   onChange={handleTypeChange}
                 />
-                <FilterSection
-                  title="Complexity"
-                  options={complexityLevels}
-                  selected={selectedComplexity}
-                  onChange={handleComplexityChange}
-                />
-                <FilterSection
-                  title="Duration"
-                  options={durations}
-                  selected={selectedDuration}
-                  onChange={handleDurationChange}
-                />
+               
                 <div className="mt-6 space-y-3">
                   <button
                     onClick={clearAllFilters}
@@ -264,17 +243,7 @@ const Services = () => {
               </div>
               
               <div className="flex items-center space-x-4">
-                <select 
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value)}
-                  className="bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-red-500 focus:border-transparent"
-                >
-                  <option>Most Popular</option>
-                  <option>Price: Low to High</option>
-                  <option>Price: High to Low</option>
-                  <option>Alphabetical</option>
-                  <option>Complexity</option>
-                </select>
+                
 
                 <div className="flex bg-white border border-gray-300 rounded-lg overflow-hidden">
                   <button
@@ -333,15 +302,9 @@ const Services = () => {
                             <span className="bg-red-100 text-red-700 px-2 py-1 rounded-full font-medium">{service.category}</span>
                             <span>{service.type}</span>
                           </div>
-                          <div className="flex items-center space-x-1 text-xs text-gray-500">
-                            <Star className="w-3 h-3 text-yellow-400 fill-current" />
-                            <span>{service.rating}</span>
-                            <span>({service.reviews})</span>
-                          </div>
+                         
                         </div>
-                        <div className="text-right flex-shrink-0">
-                          <div className="text-sm font-bold text-gray-900">{service.price}</div>
-                        </div>
+                        
                       </div>
                       
                       <p className="text-xs text-gray-600 mb-3 line-clamp-2">{service.description}</p>
@@ -363,18 +326,7 @@ const Services = () => {
                         </div>
                       </div>
                       
-                      <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
-                        <div className="flex items-center space-x-3">
-                          <div className="flex items-center">
-                            <Clock className="w-3 h-3 mr-1" />
-                            <span>{service.duration}</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Settings className="w-3 h-3 mr-1" />
-                            <span>{service.complexity}</span>
-                          </div>
-                        </div>
-                      </div>
+                     
                       
                       <button
                         onClick={() => openModal(service)}
@@ -397,10 +349,7 @@ const Services = () => {
                               <span className="text-sm bg-red-100 text-red-700 px-2 py-1 rounded-full font-medium">{service.category}</span>
                               <span className="text-sm text-gray-500">{service.type}</span>
                             </div>
-                            <div className="flex items-center space-x-1 mt-1">
-                              <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                              <span className="text-sm text-gray-600">{service.rating} ({service.reviews} reviews)</span>
-                            </div>
+                           
                           </div>
                         </div>
                       </div>
@@ -429,20 +378,6 @@ const Services = () => {
                       </div>
 
                       <div className={`${viewMode === 'list' ? 'flex-shrink-0 text-right' : ''}`}>
-                        <div className="flex items-center justify-between mb-4 text-sm text-gray-500">
-                          <div className="flex items-center space-x-4">
-                            <div className="flex items-center">
-                              <Clock className="w-4 h-4 mr-1" />
-                              <span>{service.duration}</span>
-                            </div>
-                            <div className="flex items-center">
-                              <Settings className="w-4 h-4 mr-1" />
-                              <span>{service.complexity}</span>
-                            </div>
-                          </div>
-                          <div className="text-lg font-bold text-gray-900">{service.price}</div>
-                        </div>
-
                         <button
                           onClick={() => openModal(service)}
                           className={`bg-red-600 text-white py-2 px-6 rounded-lg font-medium hover:bg-red-700 transition-colors flex items-center justify-center ${viewMode === 'list' ? 'w-auto' : 'w-full'}`}
@@ -564,15 +499,9 @@ const Services = () => {
               {/* Modal Footer */}
               <div className="border-t border-gray-200 pt-6 mt-8">
                 <div className={`grid gap-3 ${isMobile ? 'grid-cols-1' : 'grid-cols-1 sm:grid-cols-3'}`}>
-                  <button className="bg-red-600 text-white py-3 px-6 rounded-xl font-semibold hover:bg-red-700 transition-colors">
+                   <Link to={"/contact"} className="bg-red-600 col-span-3 text-center text-white py-3 px-6 rounded-xl font-semibold hover:bg-red-700 transition-colors">
                     Get Started Now
-                  </button>
-                  <button className="border border-gray-300 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-50 transition-colors">
-                    Request Quote
-                  </button>
-                  <button className="border border-gray-300 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-50 transition-colors">
-                    Schedule Call
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
