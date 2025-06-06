@@ -40,7 +40,7 @@ export default function Header() {
 
 
   return (
-    <Box >
+    <Box className='z-50'>
       <header className="header">
         <Group justify="space-around" h="100%">
           <img src="/images/logo/logo_white_bg.png" width="190px" alt="" />
@@ -59,9 +59,11 @@ export default function Header() {
               </HoverCard.Target>
 
             </HoverCard>
-
+            <Link to={"/product"} className="link">Products</Link>
+             <Link to={"/career"} className="link">Career</Link>
             <Link to={"/about"} className="link">About</Link>
             <Link to={"/contact"} className="link">Contact Us</Link>
+           
           </Group>
 
 
@@ -92,7 +94,8 @@ export default function Header() {
 
           <Link to={"/about"} className="link">About</Link>
           <Link to={"/contact"} className="link">Contact</Link>
-
+          <Link to={"/product"} className="link">Products</Link>
+           <Link to={"/career"} className="link">Career</Link>
         </ScrollArea>
       </Drawer>
     </Box>
