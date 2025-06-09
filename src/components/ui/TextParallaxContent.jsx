@@ -132,8 +132,8 @@ const QualityContent = () => (
     <h2 className="col-span-1 text-3xl font-bold md:col-span-4 font-langits tracking-wider">
       Built for Performance, Designed for Excellence
     </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl font-wave tracking-wider">
+    <div className="col-span-1 md:col-span-8 font-wave tracking-wider">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl ">
         Every line of code we write is backed by rigorous testing, industry standards, and years of expertise. We follow agile workflows and best practices to ensure each product is secure, fast, and future-proof.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
