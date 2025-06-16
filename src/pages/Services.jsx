@@ -17,10 +17,34 @@ const Services = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  const categories = ['Security', 'Cloud', 'Development', 'Mobile', 'Database', 'Infrastructure', 'Support', 'Web', 'Analytics', 'DevOps'];
-  const types = ['Standard', 'Custom', 'Enterprise'];
-  const complexityLevels = ['Basic', 'Intermediate', 'Advanced'];
-  const durations = ['Short-term', 'Medium-term', 'Long-term'];
+const categories = [
+  'Security',
+  'Cloud',
+  'Development',
+  'Mobile',
+  'Database',
+  'Infrastructure',
+  'Support',
+  'Web',
+  'Analytics',
+  'DevOps',
+  'AI',
+  'Blockchain',
+  'Consulting',
+  'Compliance',
+  'IoT',
+  'Training',
+  'Business Systems',
+  'Automation'
+];
+
+const types = [
+  'Standard',
+  'Custom',
+  'Enterprise'
+];
+
+
 
   useEffect(() => {
     const checkMobile = () => {
