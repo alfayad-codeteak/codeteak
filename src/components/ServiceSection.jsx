@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import itServicesData from "./ui/data/serviceData";
 import ServicesCard from "./ServicesCard"
 
-
-
 export default function ServiceSection() {
   return (
     <div className="py-16 px-6 bg-white" id="service-section">
@@ -14,7 +12,7 @@ export default function ServiceSection() {
       </h1>
 
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto mb-10">
-        {itServicesData.map((service) => (
+        {itServicesData.slice(0, 6).map((service) => (
           <ServicesCard
             key={service.id}
             title={service.title}
@@ -36,6 +34,3 @@ export default function ServiceSection() {
     </div>
   );
 }
-
-
-

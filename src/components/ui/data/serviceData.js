@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield,  Cloud, Code, Smartphone, Database, Wifi, Monitor, Settings, Zap, Globe,} from 'lucide-react';
+import { Shield, Cloud, Code, Smartphone, Database, Wifi, Monitor, Settings, Zap, Globe, Bot, Lock, BarChart, Server, Brain, Key, Briefcase, Workflow, FileText, Cpu, Package, Users } from 'lucide-react';
 
 // IT Services Data
 const itServicesData = [
@@ -332,6 +332,402 @@ const itServicesData = [
       "DevOps best practices guide",
       "Team training and documentation",
       "Performance optimization reports"
+    ]
+  },
+   {
+    id: 11,
+    title: "Artificial Intelligence Solutions",
+    description: "Leverage AI to automate processes, enhance decision-making, and unlock new business opportunities.",
+    icon: Brain,
+    image: "/images/services/ai.jpg",
+    category: "AI",
+    type: "Enterprise",
+    complexity: "Advanced",
+    duration: "Long-term",
+    price: "Starting from $999/month",
+    benefits: [
+      "Automated workflows for efficiency",
+      "Data-driven insights with AI models",
+      "Scalable AI infrastructure",
+      "Enhanced customer experiences",
+      "Competitive advantage through innovation"
+    ],
+    features: [
+      "Custom AI model development",
+      "Machine learning pipeline setup",
+      "Natural language processing",
+      "AI integration with existing systems",
+      "Real-time AI analytics"
+    ],
+    deliverables: [
+      "AI model architecture",
+      "Training and deployment reports",
+      "Custom AI dashboards",
+      "Integration documentation",
+      "Staff training on AI tools"
+    ]
+  },
+  {
+    id: 12,
+    title: "Blockchain Development",
+    description: "Build secure, decentralized applications and smart contracts for transparent business operations.",
+    icon: Key,
+    image: "/images/services/blockchain.jpg",
+    category: "Blockchain",
+    type: "Custom",
+    complexity: "Advanced",
+    duration: "Medium-term",
+    price: "Starting from $6,000/project",
+    benefits: [
+      "Enhanced security and transparency",
+      "Immutable transaction records",
+      "Cost-effective transaction processing",
+      "Decentralized data management",
+      "Support for multiple blockchain platforms"
+    ],
+    features: [
+      "Smart contract development",
+      "Blockchain network setup",
+      "Integration with Ethereum, Solana, etc.",
+      "Wallet and identity management",
+      "Security auditing for smart contracts"
+    ],
+    deliverables: [
+      "Blockchain architecture design",
+      "Smart contract code",
+      "Integration documentation",
+      "Security audit reports",
+      "User training materials"
+    ]
+  },
+  {
+    id: 13,
+    title: "IT Consulting Services",
+    description: "Strategic IT consulting to align technology with your business goals and optimize operations.",
+    icon: Briefcase,
+    image: "/images/services/consulting.jpg",
+    category: "Consulting",
+    type: "Standard",
+    complexity: "Intermediate",
+    duration: "Short-term",
+    price: "Starting from $1,500/project",
+    benefits: [
+      "Aligned IT and business strategies",
+      "Cost optimization recommendations",
+      "Improved operational efficiency",
+      "Risk assessment and mitigation",
+      "Expert guidance for IT transformation"
+    ],
+    features: [
+      "IT strategy development",
+      "Technology stack evaluation",
+      "Digital transformation planning",
+      "Risk and compliance assessments",
+      "Vendor selection support"
+    ],
+    deliverables: [
+      "IT strategy roadmap",
+      "Technology assessment report",
+      "Transformation plan",
+      "Risk management guidelines",
+      "Vendor selection criteria"
+    ]
+  },
+  {
+    id: 14,
+    title: "Machine Learning Operations (MLOps)",
+    description: "Streamline machine learning model deployment and management for scalable AI solutions.",
+    icon: Workflow,
+    image: "/images/services/mlops.jpg",
+    category: "AI",
+    type: "Enterprise",
+    complexity: "Advanced",
+    duration: "Long-term",
+    price: "Starting from $799/month",
+    benefits: [
+      "Faster ML model deployment",
+      "Automated model monitoring",
+      "Scalable ML infrastructure",
+      "Reduced operational costs",
+      "Continuous model improvement"
+    ],
+    features: [
+      "ML pipeline automation",
+      "Model monitoring and retraining",
+      "Cloud-based ML infrastructure",
+      "Version control for ML models",
+      "Integration with CI/CD pipelines"
+    ],
+    deliverables: [
+      "MLOps pipeline architecture",
+      "Model performance reports",
+      "Monitoring dashboards",
+      "Integration documentation",
+      "Training for MLOps workflows"
+    ]
+  },
+  {
+    id: 15,
+    title: "IT Compliance & Governance",
+    description: "Ensure regulatory compliance and robust IT governance with tailored compliance solutions.",
+    icon: FileText,
+    image: "/images/services/compliance.jpg",
+    category: "Compliance",
+    type: "Enterprise",
+    complexity: "Intermediate",
+    duration: "Long-term",
+    price: "Starting from $499/month",
+    benefits: [
+      "Compliance with GDPR, HIPAA, etc.",
+      "Reduced risk of penalties",
+      "Standardized IT governance policies",
+      "Enhanced data protection",
+      "Auditable compliance processes"
+    ],
+    features: [
+      "Compliance audits and assessments",
+      "Policy development and enforcement",
+      "Data privacy frameworks",
+      "Regular compliance reporting",
+      "Training for compliance adherence"
+    ],
+    deliverables: [
+      "Compliance audit report",
+      "Governance policy documents",
+      "Data privacy guidelines",
+      "Compliance monitoring tools",
+      "Staff training materials"
+    ]
+  },
+  {
+    id: 16,
+    title: "IoT Integration Services",
+    description: "Seamlessly integrate IoT devices with existing systems for enhanced connectivity and automation.",
+    icon: Cpu,
+    image: "/images/services/iot.jpg",
+    category: "IoT",
+    type: "Enterprise",
+    complexity: "Advanced",
+    duration: "Medium-term",
+    price: "Starting from $699/month",
+    benefits: [
+      "Unified IoT and IT ecosystems",
+      "Real-time device data integration",
+      "Scalable IoT infrastructure",
+      "Enhanced operational efficiency",
+      "Secure IoT connectivity"
+    ],
+    features: [
+      "IoT platform integration",
+      "Device-to-cloud connectivity",
+      "API development for IoT",
+      "Real-time data streaming",
+      "Security protocol implementation"
+    ],
+    deliverables: [
+      "IoT integration architecture",
+      "API documentation",
+      "Data streaming dashboards",
+      "Security setup reports",
+      "Integration training materials"
+    ]
+  },
+  {
+    id: 17,
+    title: "API Development & Management",
+    description: "Design, build, and manage robust APIs to enable seamless system integrations and data exchange.",
+    icon: Server,
+    image: "/images/services/api.jpg",
+    category: "Development",
+    type: "Custom",
+    complexity: "Intermediate",
+    duration: "Medium-term",
+    price: "Starting from $3,000/project",
+    benefits: [
+      "Seamless system interoperability",
+      "Improved data accessibility",
+      "Scalable API infrastructure",
+      "Enhanced developer productivity",
+      "Secure API endpoints"
+    ],
+    features: [
+      "REST and GraphQL API development",
+      "API documentation and testing",
+      "Rate limiting and throttling",
+      "API security with OAuth",
+      "Performance optimization"
+    ],
+    deliverables: [
+      "API specifications document",
+      "Source code and documentation",
+      "API testing reports",
+      "Security implementation guide",
+      "Developer training materials"
+    ]
+  },
+  {
+    id: 18,
+    title: "IT Training & Workshops",
+    description: "Empower your team with customized IT training and workshops to boost skills and productivity.",
+    icon: Users,
+    image: "/images/services/training.jpg",
+    category: "Training",
+    type: "Standard",
+    complexity: "Basic",
+    duration: "Short-term",
+    price: "Starting from $1,000/workshop",
+    benefits: [
+      "Improved team technical skills",
+      "Increased productivity and efficiency",
+      "Customized training programs",
+      "Hands-on learning experiences",
+      "Up-to-date with industry trends"
+    ],
+    features: [
+      "Tailored IT training curricula",
+      "Hands-on workshops and labs",
+      "Certification preparation",
+      "Online and on-site training options",
+      "Post-training support"
+    ],
+    deliverables: [
+      "Training curriculum document",
+      "Workshop materials and labs",
+      "Participant certificates",
+      "Post-training evaluation report",
+      "Access to online resources"
+    ]
+  },
+  {
+    id: 19,
+    title: "Cloud Security Services",
+    description: "Protect your cloud infrastructure with advanced security solutions tailored for cloud environments.",
+    icon: Lock,
+    image: "/images/services/cloudsec.jpg",
+    category: "Security",
+    type: "Enterprise",
+    complexity: "Advanced",
+    duration: "Long-term",
+    price: "Starting from $599/month",
+    benefits: [
+      "Comprehensive cloud security",
+      "Protection against cloud-specific threats",
+      "Compliance with cloud regulations",
+      "Real-time threat monitoring",
+      "Rapid incident response"
+    ],
+    features: [
+      "Cloud-native security tools",
+      "Identity and access management",
+      "Data encryption in the cloud",
+      "Cloud security audits",
+      "Threat detection and response"
+    ],
+    deliverables: [
+      "Cloud security assessment report",
+      "Security policy documentation",
+      "Monitoring dashboards",
+      "Incident response plan",
+      "Compliance training materials"
+    ]
+  },
+  {
+    id: 20,
+    title: "Big Data Solutions",
+    description: "Manage and analyze large-scale data sets to uncover insights and drive business growth.",
+    icon: BarChart,
+    image: "/images/services/bigdata.jpg",
+    category: "Analytics",
+    type: "Enterprise",
+    complexity: "Advanced",
+    duration: "Long-term",
+    price: "Starting from $899/month",
+    benefits: [
+      "Scalable big data infrastructure",
+      "Real-time data processing",
+      "Actionable business insights",
+      "Cost-effective data management",
+      "Integration with existing systems"
+    ],
+    features: [
+      "Big data platform setup (Hadoop, Spark)",
+      "Data lake architecture",
+      "Real-time data processing pipelines",
+      "Data visualization tools",
+      "Scalable storage solutions"
+    ],
+    deliverables: [
+      "Big data architecture design",
+      "Data processing pipelines",
+      "Analytics dashboards",
+      "Integration documentation",
+      "Training for data teams"
+    ]
+  },
+  {
+    id: 21,
+    title: "Enterprise Resource Planning (ERP) Solutions",
+    description: "Implement and customize ERP systems to streamline business processes and improve efficiency.",
+    icon: Package,
+    image: "/images/services/erp.jpg",
+    category: "Business Systems",
+    type: "Enterprise",
+    complexity: "Advanced",
+    duration: "Long-term",
+    price: "Starting from $1,200/month",
+    benefits: [
+      "Unified business process management",
+      "Improved operational visibility",
+      "Scalable ERP solutions",
+      "Enhanced decision-making",
+      "Integration with existing tools"
+    ],
+    features: [
+      "ERP system customization",
+      "Module implementation (HR, finance, etc.)",
+      "Data migration to ERP",
+      "User role management",
+      "Real-time reporting dashboards"
+    ],
+    deliverables: [
+      "ERP implementation plan",
+      "Customized ERP modules",
+      "Data migration reports",
+      "User training materials",
+      "Support and maintenance plan"
+    ]
+  },
+  {
+    id: 22,
+    title: "Robotic Process Automation (RPA)",
+    description: "Automate repetitive business processes with RPA to increase efficiency and reduce costs.",
+    icon: Bot,
+    image: "/images/services/rpa.jpg",
+    category: "Automation",
+    type: "Enterprise",
+    complexity: "Intermediate",
+    duration: "Medium-term",
+    price: "Starting from $549/month",
+    benefits: [
+      "Reduced manual workloads",
+      "Increased process accuracy",
+      "Cost savings through automation",
+      "Scalable RPA solutions",
+      "Integration with legacy systems"
+    ],
+    features: [
+      "RPA bot development",
+      "Process automation workflows",
+      "Integration with business applications",
+      "Bot performance monitoring",
+      "Security and compliance controls"
+    ],
+    deliverables: [
+      "RPA workflow designs",
+      "Bot deployment documentation",
+      "Performance monitoring tools",
+      "Security compliance reports",
+      "Training for RPA management"
     ]
   }
 ];
